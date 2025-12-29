@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>New Year Gift</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-image: url("bg.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      padding: 40px;
+      overflow-x: hidden;
+    }
+
+    .page {
+      animation: slideUp 1.2s ease-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      color: #e46924;
+      font-family: 'Playfair Display', serif;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 160px;
+      display: block;
+      margin: 20px auto;
+    }
+
+    .box {
+      background: rgba(248, 246, 244, 0.5);
+      padding: 28px;
+      border-radius: 28px;
+      max-width: 500px;
+      margin: 0 auto;
+      box-shadow: 6px 6px 0 rgba(0,0,0,0.25);
+    }
+
+    .box h3 {
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #742b02;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .box-link {
+      color: #742b02;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    .box-link:hover {
+      text-decoration: underline;
+    }
+
+    .box p {
+      white-space: pre-line;
+      font-size: 16px;
+      margin: 0;
+      color: #742b02;
+      font-weight: 400;
+    }
+
+    .signature {
+      max-width: 500px;
+      margin: 14px auto 0;
+      text-align: right;
+      font-style: italic;
+      font-weight: 700;
+      color: #742b02;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .signature span {
+      font-style: normal;
+      font-weight: 500;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+
+    <h1 id="judul"></h1>
+
+    <img src="blabla.png">
+
+    <div class="box">
+  <h3>
+    <a href="https://open.spotify.com/track/2stkLJ0JNcXkIRDNF3ld6c?si=9de8e35287064138" target="_blank" class="box-link">
+      woi kamperth pencet ini biar bacanya bisa sambil dengerin lagu anjay
+    </a>
+  </h3>
+  <p>
+jujur dulu awal awal kenal sama lu, gua ngiranya kita bakal cepet asing cok soalnya seinget gua dulu lu tuh pake muse 3d, jadinya gua mikir "ah palingan ga lama juga dah ga chatan". tapi kok tiba tiba jadi ging kay si yoshida anying terus lu tiba tiba ngajakin bikin cc csm tu hahahaha makasih dah pernah ajakin bikin cc itu.
+
+walau lu anying banget nyuruh nyuruh gua bikin dan pm ga ngasih tau blok, gua jadinya kaget kok tbtb ada new memb. tapi gpp soalnya hasilnya kita jadi masih kontakan sampe sekarang ya (walau jarang sih soalnya lu ngartis anying ini pasti lu baca 1 tahun lg). ini gw highlight lirik lagunya y.
+
+<strong>When the road looks rough ahead
+And you're miles and miles from your nice warm bed
+You just remember what your old pal said
+Boy, You've Got a Friend in Me
+Yeah, You've Got a Friend in Me</strong>
+
+anjay gw udah sweet banget begini minimal puji gw dong. oiya semoga di tahun 2026, semua harapan lu bakal tercapai, urusan lu dilancarin juga. 
+
+pokonya makasih banyak buat tahun ini ya kamperth. maaf juga kalo selama ini ada sifat atau ucapan gua yang bikin ga nyaman ok? itu salah lu soalnya. happy new year :]
+  </p>
+</div>
+
+    <div class="signature">
+      warm regards,<br>
+      <span>Kabela Ebony</span>
+    </div>
+
+  </div>
+
+  <script>
+    const nama = localStorage.getItem("nama") || "Orang Sok Misterius";
+    document.getElementById("judul").innerText =
+      "Happy New Year, " + nama + "!";
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    window.onload = function () {
+      confetti({
+        particleCount: 140,
+        spread: 80,
+        origin: { y: 0.6 },
+        colors: [
+          '#d4d62e',
+          '#f4b9c7',
+          '#dca00e',
+          '#7f9fb2',
+          '#d493bb',
+          '#e85104',
+          '#fdb7ca'
+        ]
+      });
+    };
+  </script>
+
+</body>
+</html>

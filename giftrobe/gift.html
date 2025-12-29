@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>New Year Gift</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-image: url("bg.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      padding: 40px;
+      overflow-x: hidden;
+    }
+
+    .page {
+      animation: slideUp 1.2s ease-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      color: #e46924;
+      font-family: 'Playfair Display', serif;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 160px;
+      display: block;
+      margin: 20px auto;
+    }
+
+    .box {
+      background: rgba(248, 246, 244, 0.5);
+      padding: 28px;
+      border-radius: 28px;
+      max-width: 500px;
+      margin: 0 auto;
+      box-shadow: 6px 6px 0 rgba(0,0,0,0.25);
+    }
+
+    .box h3 {
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #742b02;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .box-link {
+      color: #742b02;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    .box-link:hover {
+      text-decoration: underline;
+    }
+
+    .box p {
+      white-space: pre-line;
+      font-size: 16px;
+      margin: 0;
+      color: #742b02;
+      font-weight: 400;
+    }
+
+    .signature {
+      max-width: 500px;
+      margin: 14px auto 0;
+      text-align: right;
+      font-style: italic;
+      font-weight: 700;
+      color: #742b02;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .signature span {
+      font-style: normal;
+      font-weight: 500;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+
+    <h1 id="judul"></h1>
+
+    <img src="blabla.png">
+
+    <div class="box">
+  <h3>
+    <a href="https://open.spotify.com/track/3c3JC5TjFrEqEKheU7227c?si=4c2b1ee0301f4b83" target="_blank" class="box-link">
+      pencet ini biar bacanya bisa sambil dengerin lagu cayaaang ><
+    </a>
+  </h3>
+  <p>
+HEHEHEHEHEHE HAPPY NEW YEAR SAYANGKU CINTAKU MY ROBE MY LILU MY GAMA MY GHAFTAN MY ENRIKEEEEEE. aku suuueneng banget seseneng itu bisa ngerayain new year sama kamu lagi cik semoga new year seterusnya kita ngerayain bareng terus yah kalo bisa soon kita staycation sambil membakar jagung bersama dan nyumet mercon bareng og, tapi aku izin mamah sek. ilovyu sekebon pokonya sayangku. aku gakpernah bosen ngasih kasih sayang ke kamu sumpah soalnya sesayang itu. selain ngasih kasih sayang, aku juga gak bosen ngasih paham bos bos bos bos bos :V oiya kalo lagi dengerin lagunya, inget lirik yanf bagian ini yah ><
+
+<strong>Engga engga engga dulu
+Kalo bukan kamu
+Sebab kamu bintang
+Bawa cinta datang
+Engga engga engga dulu
+Pokoknya harus kamu
+Satu yang ku mau cuma harus kamu</strong>
+
+xixixi engga dulu kalo bukan robe eg. kuangen pol akuuu. kenapa kita harus berjauhan cooo aku kesal dengan jarak, yang sering memisahkan kiiiita. aku kan maunya tinggal serumah seatap reza atap. seumur umur main rp tuh aku temenannya belum pernah yang sampe meet up, trs aku dipertemukan sama kamu langsung merasakan first experience meet up sama my belahan jiwa dan sekarang malah ketagihan pengen meet up terus eg. aku suayang banget cikkk mau diketik segimanapun gaakan bisa mendeskripsikan rasa sayangku ke kamu og.
+
+semoga gelar S. Mat segera jadi punyamu yah sayangku, aamiinnnn. aku ndak suabar banget liat wishlistmu tercapai semua. dari sini tak doakan terus yah. semoga dilancarkan terus skrpsnya dan segala macem, semoga gaada orang seng rese. pokonya semua doa baik selalu kupanjatkan ok. be happy ya sayangku. maaf kalau selama ini ada perbuatan atau ucapanku yang bikin kamu kurang nyaman atau sakit hatiii. ayo kita tinggalkan semua kenangan buruk di 2025 ok, kenang yang baik baik ae contohnya dipalak lord buffon dan menonton kapibara. sekali lagi, happy new year robe sayangku :]
+</p>
+</div>
+
+    <div class="signature">
+      warm regards,<br>
+      <span>Kabela Ebony</span>
+    </div>
+
+  </div>
+
+  <script>
+    const nama = localStorage.getItem("nama") || "Orang Sok Misterius";
+    document.getElementById("judul").innerText =
+      "Happy New Year, " + nama + "!";
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    window.onload = function () {
+      confetti({
+        particleCount: 140,
+        spread: 80,
+        origin: { y: 0.6 },
+        colors: [
+          '#d4d62e',
+          '#f4b9c7',
+          '#dca00e',
+          '#7f9fb2',
+          '#d493bb',
+          '#e85104',
+          '#fdb7ca'
+        ]
+      });
+    };
+  </script>
+
+</body>
+</html>

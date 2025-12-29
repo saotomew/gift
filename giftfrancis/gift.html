@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>New Year Gift</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-image: url("bg.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      padding: 40px;
+      overflow-x: hidden;
+    }
+
+    .page {
+      animation: slideUp 1.2s ease-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      color: #e46924;
+      font-family: 'Playfair Display', serif;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 160px;
+      display: block;
+      margin: 20px auto;
+    }
+
+    .box {
+      background: rgba(248, 246, 244, 0.5);
+      padding: 28px;
+      border-radius: 28px;
+      max-width: 500px;
+      margin: 0 auto;
+      box-shadow: 6px 6px 0 rgba(0,0,0,0.25);
+    }
+
+    .box h3 {
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #742b02;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .box-link {
+      color: #742b02;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    .box-link:hover {
+      text-decoration: underline;
+    }
+
+    .box p {
+      white-space: pre-line;
+      font-size: 16px;
+      margin: 0;
+      color: #742b02;
+      font-weight: 400;
+    }
+
+    .signature {
+      max-width: 500px;
+      margin: 14px auto 0;
+      text-align: right;
+      font-style: italic;
+      font-weight: 700;
+      color: #742b02;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .signature span {
+      font-style: normal;
+      font-weight: 500;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+
+    <h1 id="judul"></h1>
+
+    <img src="blabla.png">
+
+    <div class="box">
+  <h3>
+    <a href="https://open.spotify.com/track/5rhwXZP0luMucnEPnYJpbI?si=04da7d464819481a" target="_blank" class="box-link">
+      pemcet ini biar bisa baca sambil dengerin lagu yang gua kasih by
+    </a>
+  </h3>
+  <p>
+HIHIHHI HAPPY NEW YEAR MY BABY MY ANCIS MY FRANCIS PIERCE MY YOSHIDEY TERSAYAAAANG lovyusomac. ajg sumpah gua bersyukur bangat tahun ini bisa dipertemukan sama lu by. ya Allah jangan pisahkan gw dengan ancis selamanya, biarkan ancis ketempelan gw. btw gua sengaja kasih lagu si tenxi hihi semoga sukak. liriknya yang ini buat eluhk ok
+
+<strong>Aku mau cari jalan tengah
+Buat kamu, apa yang nggak bisa?
+Ajak kamu ke angkasa
+Go to the moon, kita berdansa
+Aku wish you best
+Kamu yang the best
+Kata mamaku
+"Masih muda, banyak waktu"</strong>
+
+ANJAY mau kasih emot melet gabisa co gatau caranyamaaf. pokonya aku wish you beeeeeeest kamu yang the beeeeeeest. makasih banyak udah sering dengerin cerita gua dan sering cerita ke gua juga ya by. gua seneng banget kalo mabar apalagi nobar sama lu hiks rindu nonton nobar bareng (tp gua lg unin rave :V). gua jadi ngerti talentless nana gara gara elu, gua makasih banget ok. rasa syukur gua gabisa diungkapin pake kata kata anying #maafalay. tapi betulan sebersyukur itu gua ketemu sama lu.
+
+semoga di 2026 dan seterusnya, kita tetep temenan yah. semoga semua wishlist lu buat tahun 2026 tercapai semua. semoga cepet ketemu your kisah (tapi orangnya harus bener atau gua bantai). kalo tbtb kita asing nanti gua samperin bumi bogay ><. maaf kalo di tahun ini gua ada kurangnya ya by. lu murni lucu sumpah. bahkan lu diem doang udah lucu bat bagi gua. makanya gua seneng bat temenan ama lu anjay. sekali lagi happy new year yah ancis. loveyew :3
+  </p>
+</div>
+
+    <div class="signature">
+      warm regards,<br>
+      <span>Kabela Ebony</span>
+    </div>
+
+  </div>
+
+  <script>
+    const nama = localStorage.getItem("nama") || "Orang Sok Misterius";
+    document.getElementById("judul").innerText =
+      "Happy New Year, " + nama + "!";
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    window.onload = function () {
+      confetti({
+        particleCount: 140,
+        spread: 80,
+        origin: { y: 0.6 },
+        colors: [
+          '#d4d62e',
+          '#f4b9c7',
+          '#dca00e',
+          '#7f9fb2',
+          '#d493bb',
+          '#e85104',
+          '#fdb7ca'
+        ]
+      });
+    };
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>New Year Gift</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-image: url("bg.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      padding: 40px;
+      overflow-x: hidden;
+    }
+
+    .page {
+      animation: slideUp 1.2s ease-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      color: #e46924;
+      font-family: 'Playfair Display', serif;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 160px;
+      display: block;
+      margin: 20px auto;
+    }
+
+    .box {
+      background: rgba(248, 246, 244, 0.5);
+      padding: 28px;
+      border-radius: 28px;
+      max-width: 500px;
+      margin: 0 auto;
+      box-shadow: 6px 6px 0 rgba(0,0,0,0.25);
+    }
+
+    .box h3 {
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #742b02;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .box-link {
+      color: #742b02;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    .box-link:hover {
+      text-decoration: underline;
+    }
+
+    .box p {
+      white-space: pre-line;
+      font-size: 16px;
+      margin: 0;
+      color: #742b02;
+      font-weight: 400;
+    }
+
+    .signature {
+      max-width: 500px;
+      margin: 14px auto 0;
+      text-align: right;
+      font-style: italic;
+      font-weight: 700;
+      color: #742b02;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .signature span {
+      font-style: normal;
+      font-weight: 500;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+
+    <h1 id="judul"></h1>
+
+    <img src="blabla.png">
+
+    <div class="box">
+  <h3>
+    <a href="https://open.spotify.com/track/3LXWz3LTASiVb63HWc7Wa7?si=49baeff975b64b15" target="_blank" class="box-link">
+      pencet teks ini biar bacanya bisa sambil dengerin lagu sayaaang
+    </a>
+  </h3>
+  <p>
+hai olde cayangkuuu. happy new year yah! aku seneng banget bisa ketemu kamu lewat gc prikitiw terus sempet ajakin ts bareng + bikin jj sama vidcu HIHIHIHI LUCUUUK. jujur aku sedih sama kaget banget pas akun kamu kefreeze itu (maaf kalo membawa luka lama) TAPI AKU BERSYUKUR BANGET KAMU BALIK LAGI JADINYA KITA MASIH KEEP IN TOUCH SAYANGKUUU HUHUHUHU. oiya ini liriknya buat kamu diinget inget yah
+
+<strong>You are a good thing I've noticed, I've noticed
+And I want a good thing with you
+You are the best thing, and I've got it, I've got you
+And I would do anything for you</strong>
+
+hihihi betulan i would do anything for you ok istriku yang udah jadi istrinya orang hhhh trtwa tp trluka. harusnya aku pake lagu bruno mars "now my baby's dancing but she's dancing with another man". BERCANDA. aku ikut happy kalo kamu udah ketemu your kisah ok!!
+
+semoga tahun ini dan seterusnya, hubungan kamu sama pacar kamu baik terus. hubungan sama aku dan istri kamu yang lain dan kitiw juga harus tetep baik!! (akumaksa). makasih udah mau jadi temen aku di tahun ini yah oldeeee, wabyusomac :]
+  </p>
+</div>
+
+    <div class="signature">
+      warm regards,<br>
+      <span>Kabela Ebony</span>
+    </div>
+
+  </div>
+
+  <script>
+    const nama = localStorage.getItem("nama") || "Orang Sok Misterius";
+    document.getElementById("judul").innerText =
+      "Happy New Year, " + nama + "!";
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    window.onload = function () {
+      confetti({
+        particleCount: 140,
+        spread: 80,
+        origin: { y: 0.6 },
+        colors: [
+          '#d4d62e',
+          '#f4b9c7',
+          '#dca00e',
+          '#7f9fb2',
+          '#d493bb',
+          '#e85104',
+          '#fdb7ca'
+        ]
+      });
+    };
+  </script>
+
+</body>
+</html>

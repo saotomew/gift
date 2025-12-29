@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>New Year Gift</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-image: url("bg.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      padding: 40px;
+      overflow-x: hidden;
+    }
+
+    .page {
+      animation: slideUp 1.2s ease-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      color: #e46924;
+      font-family: 'Playfair Display', serif;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 160px;
+      display: block;
+      margin: 20px auto;
+    }
+
+    .box {
+      background: rgba(248, 246, 244, 0.5);
+      padding: 28px;
+      border-radius: 28px;
+      max-width: 500px;
+      margin: 0 auto;
+      box-shadow: 6px 6px 0 rgba(0,0,0,0.25);
+    }
+
+    .box h3 {
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #742b02;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .box-link {
+      color: #742b02;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    .box-link:hover {
+      text-decoration: underline;
+    }
+
+    .box p {
+      white-space: pre-line;
+      font-size: 16px;
+      margin: 0;
+      color: #742b02;
+      font-weight: 400;
+    }
+
+    .signature {
+      max-width: 500px;
+      margin: 14px auto 0;
+      text-align: right;
+      font-style: italic;
+      font-weight: 700;
+      color: #742b02;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .signature span {
+      font-style: normal;
+      font-weight: 500;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+
+    <h1 id="judul"></h1>
+
+    <img src="blabla.png">
+
+    <div class="box">
+  <h3>
+    <a href="https://open.spotify.com/track/49FYlytm3dAAraYgpoJZux?si=76fa3d602eba4082" target="_blank" class="box-link">
+      pencet ini biar bacanya bisa sambil dengerin lagu yah hannah
+    </a>
+  </h3>
+  <p>
+happy new year hannah my baby my deltras to my bonek dan my sangzhi to my power :3 walau kau faceless parah tapi aku tetep anggap kau sangzhi hehe. anjir aku sengaja kasih lagu yang semangat biar gak mellow mellow banget, jadi dengerin yah. apalagi lirik yang ini nih maksudgw buat elu anying
+
+<strong>When the sun shine, we shine together
+Told you I'll be here forever
+Said I'll always be your friend
+Took an oath, I'ma stick it out to the end
+Now that it's raining more than ever
+Know that we'll still have each other
+You can stand under my umbrella</strong>
+
+anjaaaaay we shine together banget gaktuj. stop penyakit gamon gila lu ituyah udah saatnya moveon. tahun 2026 ayo hapus kalimat gamon dari kamus lu. aku prefer liat kau nyasar di tunjungan plaza drpd liat kau gamon yah by gak tega betol aku. makasi yah udah acc aku ke gc hekbes waktu itu heheh iloveyou selalu sumpah
+
+semoga di 2026 semua harapan kamu tercapai yah bby (kecuali harapan untuk balikan), dan semoga semua urusan kamu dimudahkan ok. aku gaktau kesibukanmu apa cok... tp apapun itu tetap kudoakan semoga dapet yang terbaik yah. kangen namatin petapeta tp gwh udah lostspark main peta oeta jir. maaf yah kalo selama ini aku ada salah ke kamu sayangku
+  </p>
+</div>
+
+    <div class="signature">
+      warm regards,<br>
+      <span>Kabela Ebony</span>
+    </div>
+
+  </div>
+
+  <script>
+    const nama = localStorage.getItem("nama") || "Orang Sok Misterius";
+    document.getElementById("judul").innerText =
+      "Happy New Year, " + nama + "!";
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    window.onload = function () {
+      confetti({
+        particleCount: 140,
+        spread: 80,
+        origin: { y: 0.6 },
+        colors: [
+          '#d4d62e',
+          '#f4b9c7',
+          '#dca00e',
+          '#7f9fb2',
+          '#d493bb',
+          '#e85104',
+          '#fdb7ca'
+        ]
+      });
+    };
+  </script>
+
+</body>
+</html>
